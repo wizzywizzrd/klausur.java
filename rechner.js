@@ -3,8 +3,8 @@ function rechner(num1, num2, operation) {
     
     if (operation === "summe") {
       ergebnis = summe(num1, num2);
-    } else if (operation === "differenz") {
-      ergebnis = differenz(num1, num2);
+    } else if (operation === "produkt") {
+      ergebnis = produkt(num1, num2);
     } else {
       console.log("Ungültige Operation.");
       return;
@@ -17,9 +17,9 @@ function rechner(num1, num2, operation) {
     return num1 + num2;
   }
   
-  function differenz(num1, num2) {
-    return num1 - num2;
+  function produkt(num1, num2) {
+    return num1 * num2;
   }
 
-rechner(5, 3, "summe"); 
-rechner(5, 3, "differenz");
+rechner(26, 5, "summe"); 
+rechner(12, 9, "produkt");
